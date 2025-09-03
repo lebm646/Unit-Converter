@@ -1,16 +1,11 @@
-# converter
+# Measures Converter
 
-A new Flutter project.
+A Flutter project that converts between imperial and metric systems using Dart.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Just enter a value, choose the from and to measuring unit and hit `Convert`! You will have the results shown in your screen! It's that simple.
 
-A few resources to get you started if this is your first Flutter project:
+## Future development
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Adding a `Swap` button to quickly swap back and forth between measures
