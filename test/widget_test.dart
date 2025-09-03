@@ -1,0 +1,25 @@
+// This is a basic Flutter widget test.
+//
+// To perform an interaction with a widget in your test, use the WidgetTester
+// utility in the flutter_test package. For example, you can send tap and scroll
+// gestures. You can also use WidgetTester to find child widgets in the widget
+// tree, read text, and verify that the values of widget properties are correct.
+
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import 'package:converter/main.dart';
+
+void main() {
+  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const ConversionApp());
+
+    expect(find.text('Measures Converter'), findsOneWidget);
+    await tester.enterText(find.byKey(const Key('valueField')), '100');
+    await tester.tap(find.byKey(const Key('convertButton')));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('meters are'), findsOneWidget);
+
+  });
+}
