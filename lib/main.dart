@@ -33,13 +33,13 @@ class _ConverterScreenState extends State<ConverterScreen> {
   final _valueCtrl = TextEditingController();
 
   // Show all units in the "From" dropdown; "To" will be filtered to same category.
-  // Defaults that match the screenshot.
+  // Defaults that match the design layout
   String _fromCode = 'm';  // meters
   String _toCode   = 'ft'; // feet
 
   String? _result;
 
-  // Pretty, lowercase names to match screenshot text
+  // Pretty, lowercase names to match design requirements
   static const Map<String, String> _unitNames = {
     'm': 'meters',
     'km': 'kilometers',
